@@ -1,0 +1,23 @@
+{
+  "name": "namaste_react",
+  "version": "1.0.0",
+  "description": "namaste react",
+  "homepage": "https://github.com/gokulr-05/Namaste_React#readme",
+  "bugs": {
+    "url": "https://github.com/gokulr-05/Namaste_React/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gokulr-05/Namaste_React.git"
+  },
+  "license": "ISC",
+  "author": "Gokul",
+  "type": "commonjs",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.1"
+  }
+}
