@@ -28,18 +28,13 @@ const heading = React.createElement(
 </div> */
 }
 
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "I'm h1111 tag"),
-    React.createElement("h2", {}, "I'm h2 tag"),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", {}, "I'm h1 tag"),
-    React.createElement("h2", {}, "I'm h2 tag"),
-  ]),
-]);
+const parent = React.createElement("h1", { id: "parent" }, ["Gokul is Here"]);
+
+const jsxHeading = <h1>Heading using jsx</h1>;
 
 console.log("parent=", parent);
+
+console.log("jsxHeading=", jsxHeading);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(parent);
