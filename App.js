@@ -1,40 +1,34 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const heading = React.createElement(
-  "h1",
-  { id: "heading1", xyz: "abc" },
-  "Hello World from React!"
+// React Element
+const jsxHeading = <h1 className="heading">Heading using jsx</h1>;
+
+// React Component
+const Title = () => (
+  <div>
+    <h1 className="heading">Title</h1>
+  </div>
 );
 
-{
-  /* <div id="parent">
-  <div id="child1">
-    <h1>
-      I'm h1 tag
-    </h1>
-    <h2>
-      I'm h2 tag
-    </h2>
-  </div>  
-    <div id="child2">
-    <h1>
-      I'm h1 tag
-    </h1>
-    <h2>
-      I'm h2 tag
-    </h2>
-  </div>  
-</div> */
-}
+const a = 10;
+const b = 20;
 
-const parent = React.createElement("h1", { id: "parent" }, ["Gokul is Here"]);
+// React Component
+const HeadingComponent = () => {
+  return (
+    <div>
+      {jsxHeading}
+      <h1>{a + b}</h1>
+      <h1>Namaste React</h1>
 
-const jsxHeading = <h1>Heading using jsx</h1>;
-
-console.log("parent=", parent);
-
-console.log("jsxHeading=", jsxHeading);
+      {Title()}
+      <Title />
+      <Title></Title>
+    </div>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+
+root.render(<HeadingComponent />);
